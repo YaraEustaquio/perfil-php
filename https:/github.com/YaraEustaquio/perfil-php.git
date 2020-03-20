@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Meu perfil</title>
+    
+    <style>
+    img{ height: 100px;
+     width: 100px;
+     display: block;
+    }
+
+    </style>
+
+</head>
+<body>
+    <?php
+
+    echo "MINHAS INFORMAÇÕES:";
+    $vet = array(
+      'img' => 'https://image.freepik.com/vetores-gratis/icone-de-perfil-de-pessoas_24877-40756.jpg',
+      'nome' => 'Yara Eustaquio', 
+      'apelido' => 'Lala',
+      'email' => 'eustaquioyara@gmail.com',
+      'endereco' => 'Jóse Cazuza Magalhaes',
+      'cidade' => 'Iuiu',
+      'curso' => 'informática para Internet',
+      'disciplina' => 'Programação de Sistema Web',
+      'ano' => '2020',
+    );
+
+    echo ('<img src=' . $vet ['img']. '> <br><br>');
+	echo ('Nome:' . $vet ['nome']. '<br> Apelido: '. $vet ['apelido']. '<br> E-mail: '. $vet ['email']. '<br> Endereço: '. $vet ['endereco'].'<br> Cidade: '. $vet ['cidade']. '<br> Curso: '. $vet ['curso']. '<br> Disciplina: '. $vet ['disciplina']. '<br> Ano: '. $vet ['ano']);
+
+    ?>
+
+</body>
+
+</html>
